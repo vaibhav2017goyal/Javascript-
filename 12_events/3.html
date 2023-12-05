@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Code Vaibhav</h1>
+    <button id="Start" >Start</button>
+    <button  id="stop">Stop</button>
+</body>
+<script>
+    let intid;
+    const vaibhav=function(){
+        console.log("vaibhav",Date.now())
+    }
+    const startint=function(){
+        intid=setInterval(vaibhav,1000)
+       
+    }
+    const stopint=function(){
+        clearInterval(intid)
+    }
+
+    document.querySelector('#Start').addEventListener('click',startint)
+    document.querySelector('#stop').addEventListener('click',stopint)
+    
+</script>
+</html>
